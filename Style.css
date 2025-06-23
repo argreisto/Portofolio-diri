@@ -1,0 +1,103 @@
+/* Reset dan dasar */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #e0f7ff, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Container layout */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Header dengan gradasi dan animasi */
+header {
+  background: linear-gradient(135deg, #0077cc, #00bcd4);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header .highlight {
+  color: #ffe600;
+}
+
+.typewriter {
+  border-right: 2px solid white;
+  width: fit-content;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+}
+
+/* Animasi teks */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+/* Fade in */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Main content */
+main {
+  padding: 40px 0;
+  animation: slideUp 1.5s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+h2 {
+  color: #0077cc;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 5px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+ul li:hover {
+  transform: translateX(5px);
+  color: #0077cc;
+}
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 50px;
+  color: #555;
+}
